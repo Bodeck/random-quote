@@ -9,6 +9,9 @@
         color: white;
         background-color: black;
     }
+    @media (max-width: 370px) {
+        margin: 5px;
+    }
 }
 * {
     font-family: 'Oswald', sans-serif;
@@ -38,6 +41,9 @@ main {
     .menu {
         display: flex;
         justify-content: center;
+        @media (max-width: 370px) {
+            flex-direction: column;
+        }
 
     }
     .trigger {
@@ -52,6 +58,7 @@ main {
     }
     a.tweet {
         @include button-style();
+        text-align: center;
         text-decoration: none;
         display: inline-block;
     }

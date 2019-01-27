@@ -43,6 +43,15 @@ main .menu {
           justify-content: center;
 }
 
+@media (max-width: 370px) {
+  main .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .trigger {
   background-color: transparent;
   border: solid 1px black;
@@ -56,6 +65,12 @@ main .trigger {
 main .trigger:hover {
   color: white;
   background-color: black;
+}
+
+@media (max-width: 370px) {
+  main .trigger {
+    margin: 5px;
+  }
 }
 
 main .trigger .fas {
@@ -73,6 +88,7 @@ main a.tweet {
   margin: 15px;
   outline: none;
   padding: 10px 40px;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
 }
@@ -80,5 +96,11 @@ main a.tweet {
 main a.tweet:hover {
   color: white;
   background-color: black;
+}
+
+@media (max-width: 370px) {
+  main a.tweet {
+    margin: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
