@@ -32,6 +32,7 @@ main {
     }
     .quote {
         padding: 15px;
+        font-weight: 300;
     }
     .author {
         font-style: italic;
@@ -49,11 +50,17 @@ main {
     .trigger {
         @include button-style();
         cursor: pointer;
+        padding-left: 20px;
         .fas {
-            display: none;
+            // display: none;
+            visibility: hidden;
         }
-        &:disabled .fas{
-            display: inline;
+        &:disabled {
+            cursor: not-allowed;
+            .fas{
+                // display: inline-block;
+                visibility: visible;
+            }
         }
     }
     a.tweet {

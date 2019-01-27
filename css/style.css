@@ -26,6 +26,7 @@ main .box {
 
 main .quote {
   padding: 15px;
+  font-weight: 300;
 }
 
 main .author {
@@ -60,6 +61,7 @@ main .trigger {
   outline: none;
   padding: 10px 40px;
   cursor: pointer;
+  padding-left: 20px;
 }
 
 main .trigger:hover {
@@ -74,11 +76,15 @@ main .trigger:hover {
 }
 
 main .trigger .fas {
-  display: none;
+  visibility: hidden;
+}
+
+main .trigger:disabled {
+  cursor: not-allowed;
 }
 
 main .trigger:disabled .fas {
-  display: inline;
+  visibility: visible;
 }
 
 main a.tweet {
