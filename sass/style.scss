@@ -1,0 +1,58 @@
+@mixin button-style {
+    background-color: transparent;
+    border: solid 1px black;
+    color: black;
+    margin: 15px;
+    outline: none;    
+    padding: 10px 40px;
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px auto;
+    header {
+        text-align: center;
+    }
+    .box {
+        width: 70%;
+        margin: auto;
+    }
+    .quote {
+        padding: 15px;
+    }
+    .author {
+        font-style: italic;
+        text-align: end;
+        padding: 30px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+
+    }
+    .trigger {
+        @include button-style();
+        cursor: pointer;
+        .fas {
+            display: none;
+        }
+        &:disabled .fas{
+            display: inline;
+        }
+    }
+    a.tweet {
+        @include button-style();
+        text-decoration: none;
+        display: inline-block;
+    }
+}

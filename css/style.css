@@ -1,0 +1,84 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+main header {
+  text-align: center;
+}
+
+main .box {
+  width: 70%;
+  margin: auto;
+}
+
+main .quote {
+  padding: 15px;
+}
+
+main .author {
+  font-style: italic;
+  text-align: end;
+  padding: 30px;
+}
+
+main .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .trigger {
+  background-color: transparent;
+  border: solid 1px black;
+  color: black;
+  margin: 15px;
+  outline: none;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+main .trigger:hover {
+  color: white;
+  background-color: black;
+}
+
+main .trigger .fas {
+  display: none;
+}
+
+main .trigger:disabled .fas {
+  display: inline;
+}
+
+main a.tweet {
+  background-color: transparent;
+  border: solid 1px black;
+  color: black;
+  margin: 15px;
+  outline: none;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+main a.tweet:hover {
+  color: white;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
