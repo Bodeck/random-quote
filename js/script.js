@@ -14,6 +14,10 @@ function getQuote() {
                 trigger.removeAttribute('disabled');
             };
         })
+        .catch(function(reason){
+            trigger.removeAttribute('disabled');
+            alert(reason);
+        })
 }
 
 function createTweet(input) {
